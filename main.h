@@ -8,7 +8,7 @@
  */
 typedef struct print
 {
-	char *t;
+	char *c;
 	int (*f)(va_list);
 } flags_print;
 
