@@ -1,5 +1,4 @@
-#include <stdarg.h>
-#include "_printf.c"
+#include "main.h"
 #include <stddef.h>
 
 /**
@@ -12,12 +11,16 @@ int (*get_op(const char c))(va_list)
 {
 	int i = 0;
 
-	flags_print = {
+	flags_print fp[] = {
 		{"c", print_char},
 		{"s", print_str},
-		{"%", print_percent}
+		{"%", print_percent},
+		{"i", print_int},
+		{"d", print_decimal},
+		{NULL, NULL}
+
 	};
-	while (i < 3)
+	while (fp[i].c != NULL)
 	{
 		if (c == fp[i].c[0])
 		{
