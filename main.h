@@ -18,5 +18,6 @@ int print_char(va_list ch);
 int print_str(va_list s);
 int print_int(va_list i);
 int print_decimal(va_list d);
+int print_binary(va_list bin);
 
 #endif /* _MAIN_H */
