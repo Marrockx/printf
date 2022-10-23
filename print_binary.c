@@ -30,7 +30,7 @@ int print_binary(va_list bin)
 		sum += arr[i];
 		if (sum || i == 31)
 		{
-			_putchar('0' + a[i]);
+			_putchar('0' + arr[i]);
 			ct++;
 		}
 	}
