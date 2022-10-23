@@ -17,6 +17,10 @@ static int (*get_op(const char *c))(va_list)
 		{"i", print_int},
 		{"d", print_decimal},
 		{"b", print_binary},
+		{"u", print_u},
+		{"o", print_o},
+		{"x", print_x},
+		{"X", print_X},
 		{NULL, NULL}
 
 	};
